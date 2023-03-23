@@ -14,11 +14,11 @@ public class Main {
         b1.withdraw(21);
         */
 
-        /*
-        CurrentAccount c1 = new CurrentAccount("Druvasena Reddy",5999,"AAAABB");
+
+        CurrentAccount c1 = new CurrentAccount("Druvasena Reddy",5999,"AAABB");
         c1.validateLicenseId();
         System.out.println(c1.tradeLicenseId);
-        */
+
 
         /*
         SavingsAccount s1 = new SavingsAccount("Druvasena Reddy",1000,500,12);

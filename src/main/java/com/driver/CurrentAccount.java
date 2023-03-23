@@ -50,7 +50,12 @@ public class CurrentAccount extends BankAccount{
                 tradeLicenseId+=arr[i];
                 tradeLicenseId+= arr[(int)Math.ceil((double)arr.length/2) + i];
             }
-            if(arr.length%2!=0) tradeLicenseId+=arr[arr.length/2];
+            if(arr.length%2!=0) {
+                if(tradeLicenseId.charAt(0) == arr[arr.length / 2])
+                    tradeLicenseId += arr[arr.length / 2];
+                else
+                    tradeLicenseId = arr[arr.length / 2] + tradeLicenseId;
+            }
         }
     }
 
